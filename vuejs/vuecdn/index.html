@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Score App</h1>
+
+      <div class="Player1">
+        <h1>{{nama}}</h1>
+        <p>{{nyawa}}</p>
+      </div>
+    </div>
+
+    <script>
+      const sample = {
+        data() {
+          return {
+            nama: "ilham",
+            nyawa: 10,
+          };
+        },
+      };
+      Vue.createApp(sample).mount("#app");
+    </script>
+  </body>
+</html>
