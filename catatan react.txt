@@ -1,0 +1,44 @@
+ILHAMMAULANA1560374
+
+
+dignejadra@vusra.com
+
+
+https://register.legionnetwork.io/9MUM5l6
+9MUM5l6
+
+https://ayo.coca-cola.co.id/c/idm-coke-ayo-9-01?fbclid=IwAR0xokNzbIy_YjaDBULQGIoW1wsd-3O34dUgtMAmvopd0Ra87w6aPN9-vN4
+
+
+gunakan state jika kamu ingin mengolah data yang bersifat internal di dalam component itu sendiri
+
+gunakan props jika kamu ingin/sedang berkomunikasi (melempar data)
+dengan component lain
+
+
+STATE
+State pada dasarnya dapar di modifikasi oleh aktifitas user atau perubahannya dari data network
+setiap data state berubah, maka react akan merender  ulang komponent nya 
+objek stateharus di buat denga constructor default
+objek state dapat menyimpan multi properti data 
+this.setState() merupakan fungsi untuk merubah data state
+setState() digunakanuntung menggabungkan (merger ) data state antara state sebelum dan sesuadah
+
+
+
+
+
+Props
+props digunakan untuk passing data dan event handler terhadapchild component
+props bersifat immutable(tidak dapat di ubah ) hanya menerima
+propsdapat digunakan di statefuldan stateless component
+props di set oleh parent Component untuk Child component
+
+State
+state digunakan untuk menyimpan data dari komponen yang di render ke view 
+state dapat memegang data dan dapat berubah sewaktu waktu
+state hanya dapat digunakan pada class component 
+state biasanya berubah datanya oleh event handler 
+
+
+

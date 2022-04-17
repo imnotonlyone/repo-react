@@ -1,0 +1,88 @@
+/// ROAD MAP REACT
+
+
+
+# buat besok 
+kita catat dahulu 
+
+kita pelajari MERN STACKK
+apa saja yang harus di pelajari 
+
+M = MONGO DB
+E = Express Js
+R = React
+N = Node JS
+
+
+Parsinta 
+1. Basic State 
+2. Form handling 
+3. Stateless
+4. component & props
+5. Reusable
+6. Fetching data dengan useEffect
+7. React Router
+8. Route wildcard
+9. State management
+10. recoil
+11. middle ware
+1. kabarin orang suruh kirim datanya 
+2. install node js dan git 
+3. buat app translation app 
+4. lanjutin lagi boostrap 
+5. lanjutin buat translation app
+6. lanjutin leetcode 
+
+// main concept
+1. Helloword
+
+ReactDOM.render(
+  <h1>Halo, dunia!</h1>,
+  document.getElementById('root')
+);
+
+2. JSX (gabungan dari html dan javascript)
+contoh : 
+const element = <h1>Halo, Dunia!</h1>;
+
+Menyematkan Ekspresi di JSX
+const name = 'Budi';
+const element = <h1>Halo, {name}</h1>;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+contoh 2
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Budi',
+  lastName: 'Mahardika'
+};
+
+const element = (
+  <h1>
+    Halo, {formatName(user)}!
+  </h1>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+contoh 3
+
+function getGreeting(user) {
+  if (user) {
+    return <h1>Halo, {formatName(user)}!</h1>;
+  }
+  return <h1>Halo, Orang Asing.</h1>;
+}
+
+

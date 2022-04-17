@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="onLoad()">
+    <button onclick="onClick()">Klik tombol ini</button>
+    <input type="text" onkeypress="onKeyPress()" placeholder="Input" />
+
+    <form action="#">
+      <input
+        type="radio"
+        onchange="onChange(this.value)"
+        value="Perempuan"
+      /><br />
+      <input
+        type="radio"
+        onchange="onChange(this.value)"
+        value="Laki-Laki"
+      /><br />
+    </form>
+
+    <form name="form_daftar" onsubmit="onSubmit()" method="post">
+      Nama : <input type="text" name="nama" /> <br />
+      Email : <input type="text" name="Email" /> <br /><br />
+      <button type="submit" id="tombol">Daftar</button>
+    </form>
+    <script>
+      function onSubmit() {
+        alert("data berhasil di submut");
+      }
+      function onChange(jk) {
+        alert("jenis kelamin anda adalah" + jk);
+      }
+
+      document.write("Hello world");
+      function onClick() {
+        alert("Event Onclick");
+      }
+
+      function onKeyPress() {
+        alert("Event On key press");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        background-color: blueviolet;
+        color: white;
+        padding: 10px;
+        font-family: Lato, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      class Header extends React.Component {
+        constructor() {
+          super();
+          // membuat objek state
+          this.state = {
+            title: "Belajar Reactjs",
+            subTitle: "Panduan step-by-step Reactjs untuk pemula",
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <h1>{this.state.title}</h1>
+              <h2>{this.state.subTitle}</h2>
+            </div>
+          );
+        }
+      }
+
+      // render komponen ke RealDOM
+      ReactDOM.render(<Header />, document.getElementById("app"));
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </body>
+</html>
